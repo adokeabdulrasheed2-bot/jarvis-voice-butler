@@ -1,0 +1,10 @@
+pyserial>=3.5
+PyYAML>=6.0
+python-dotenv>=1.0
+requests>=2.32
+pyttsx3>=2.90
+opencv-python-headless>=4.10
+
+# Optional offline STT
+# vosk>=0.3.45
+# sounddevice>=0.5

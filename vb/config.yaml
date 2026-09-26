@@ -1,0 +1,90 @@
+assistant_name: VB
+log_level: INFO
+confirm_sensitive_actions: true
+default_location:
+  name: Kigali
+  latitude: -1.9441
+  longitude: 30.0619
+
+ai:
+  provider: ollama
+  base_url: http://127.0.0.1:11434
+  model: llama3.2
+  vision_model: ""
+  timeout_seconds: 60
+  temperature: 0.4
+
+voice:
+  enabled: false
+  stt_engine: none
+  tts_engine: pyttsx3
+  vosk_model_path: ""
+  rate: 175
+  wake_word: vb
+
+sim808:
+  enabled: true
+  port: COM3
+  baudrate: 115200
+  timeout: 2
+  gps_poll_seconds: 3
+
+email:
+  imap_host: ""
+  imap_port: 993
+  smtp_host: ""
+  smtp_port: 587
+  username: ""
+  from_address: ""
+  mailbox: INBOX
+
+weather:
+  provider: open-meteo
+  timeout_seconds: 10
+
+maps:
+  nominatim_url: https://nominatim.openstreetmap.org
+  osrm_url: https://router.project-osrm.org
+  user_agent: VB-local-assistant/1.0
+
+camera:
+  index: 0
+  capture_dir: captures
+
+permissions:
+  CAMERA: true
+  MICROPHONE: true
+  GPS: true
+  SMS: true
+  PHONE_CALLS: true
+  EMAIL: true
+  FILESYSTEM: true
+  DESKTOP_CONTROL: true
+  WEB_ACCESS: true
+  SYSTEM_COMMANDS: false
+
+confirm:
+  SMS: true
+  PHONE_CALLS: true
+  EMAIL: true
+  FILESYSTEM: true
+  SYSTEM_COMMANDS: true
+  WEB_ACCESS: false
+  CAMERA: false
+  GPS: false
+  DESKTOP_CONTROL: false
+
+desktop:
+  allowed_apps:
+    calculator: calc
+    notepad: notepad
+    vscode: code
+    vs code: code
+    explorer: explorer
+    chrome: chrome
+    edge: msedge
+  allowed_roots: []
+
+browser:
+  headless: false
+  timeout_ms: 15000
